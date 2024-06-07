@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Body Rules */
+body {
+  font-family: "urbane-adscript", sans-serif;
+  background-color: black;
+  max-height: fit-content;
+  overflow: hidden;
+}
+/* Class Selects */
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height: 100vh;
+}
+
+.image img {
+  max-width: 45vw;
+  height: auto;
+  border: 5px solid white; 
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  max-width: 50vw;}
+
+  .text-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+    margin-left: 100px;
+    max-width: 50vw;
+    padding-top: 20px;
+  }
+
+/* Element Selectors */
+
+h1 {
+  color: white;
+}
+p {
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{color:orange}
+
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+   
+  body {
+      overflow: auto; 
+  }
+
+  .image {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      padding: 20px; 
+  }
+
+  .image img {
+      max-width: 90vw; 
+      height: auto;
+      margin-bottom: 20px; 
+  }
+
+  .text-box, .text-box2 {
+      max-width: 90vw; 
+      margin-left: 0; 
+      text-align: center; 
+      margin-bottom: 20px; 
+  }
+}
