@@ -1,90 +1,199 @@
-html {
+/* Universal Styles */
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: 'Kanit', sans-serif;
+  background: url("../assets/unsplashinvert.jpg") no-repeat center center fixed !important;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-y: scroll;
+  
+  display: flex;
   height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: auto; 
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+
+/* Nav Bar Styles */
+
+.navbar {
+  font-size: x-large;
+  position: fixed;
   width: 100%;
 }
 
-/* Body Rules */
-body {
-  font-family: "urbane-adscript", sans-serif;
-  background-color: black;
-  max-height: fit-content;
-  overflow: hidden;
-}
-/* Class Selects */
-
-.image {
-  display: flex;
-  align-items: center;
-  justify-content: center ;
-  height: 100vh;
+nav a {
+  color: white !important;
+  font-weight: 400 !important;
 }
 
-.image img {
-  max-width: 45vw;
-  height: auto;
-  border: 5px solid white; 
+
+/* Main Content */
+
+#title  {
+  font-size: 100%;
+  padding-bottom: 100px;
 }
 
-.text-box {
+#title h1 {
+  font-size: 400%;
+}
+
+.code img {
+  width: 10%;
+}
+
+
+.accordion {
+  width: 50%; 
+}
+
+.accordion-button {
+      color: white !important;
+      background-color: #333;
+
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #333;
+}
+
+.collapsed {background-color: #333;}
+
+/* Progress Bars */
+
+.skills {
+  text-align: center;
+}
+
+.progress-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: #333;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skill-label {
+  width: 150px;
+}
+
+.progress-bar-background {
+  width: 400px;
+  height: 25px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffd700;
+  border-radius: 5px;
+}
+
+.progress-value {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #333;
+}
+
+/* Project Cards */
+.card-footer {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+}
+
+/* Style the button with black and white colors */
+.card-footer .btn-primary {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: 1px solid white; /* White border */
+}
+
+.card-footer .btn-primary:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+  border: 1px solid black; /* Black border on hover */
+}
+
+/* insta section */
+
+
+/* Footer Styles */
+
+footer {
   text-align: center;
-  margin-left: 100px;
-  max-width: 50vw;}
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+  padding: 0em;
+}
 
-  .text-box2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: center;
-    margin-left: 100px;
-    max-width: 50vw;
-    padding-top: 20px;
-  }
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: none !important;
+  color: inherit;
+  align-items: center;
+}
 
-/* Element Selectors */
-
-h1 {
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
   color: white;
 }
-p {
-  color: white;
-}
-a {
+
+#social-networks span {
+  font-size: 14px;
   color: white;
   text-decoration: none;
 }
 
-a:hover{color:orange}
+li a {
+  text-decoration: none;
+}
 
+/* Media Queries */
 
-/* Mobile-specific styles */
-@media only screen and (max-width: 768px) {
-   
-  body {
-      overflow: auto; 
-  }
-
-  .image {
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      justify-content: center;
-      height: auto;
-      padding: 20px; 
-  }
-
-  .image img {
-      max-width: 90vw; 
-      height: auto;
-      margin-bottom: 20px; 
-  }
-
-  .text-box, .text-box2 {
-      max-width: 90vw; 
-      margin-left: 0; 
-      text-align: center; 
-      margin-bottom: 20px; 
+@media (max-width: 768px) {
+  .accordion {
+      width: 100%; 
   }
 }

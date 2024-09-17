@@ -1,35 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Samuel Parker Tech</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Samuel Parker">
-    <!-- Link to Urbane Adscript font from Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/hcj8osu.css">
-     <!-- Primary CSS -->
-    <link href="css/style.css" rel="stylesheet"> 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <title>Samuel Parker Tech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Samuel Parker">
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Primary CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="aassets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-<div class="image">
-    <img src="https://lh3.googleusercontent.com/pw/AP1GczOxC09-ghBezBKzGDsdRKf2IqEBt_xGqTWx8wJdJzAntLM7Fj_I7UCbKsd-PC4oW1CZPd4l97qk19mnwxlzqe-3k6ZD6aFP6Bgg52NU1bXwNJdKMytl98uyDEiDvYbDkM7nXKbkyUQbsn5ksAdniCpu=w2530-h1305-s-no-gm" aria-label="Osaka Dotonbori River Bridge with rainbow colours reflected in the river" alt="Osaka Dotonbori River Bridge with rainbow colours reflected in the river">
-    <div class="text-box">
-    <h1>Samuel Parker.tech</h1>
-    <p>Live Github Site</p>
-</div>
-       <div class="text-box2">
-        <a href="https://www.linkedin.com/in/samuelparkerdev/" aria-label="Go to linkedin page, opens in new link" target="_blank">Linkedin</a>
-        <a href="https://github.com/SamuelParkerTech" aria-label="Go to Github page, opens in new link" target="_blank">Github</a>
-        <a href="https://linktr.ee/samuelparkertech" aria-label="Go to Linktr.ee page, opens in new link" target="_blank">Linktree</a>
-           <p>
-               <a href="mailto:email@samuelparker.tech" aria-label="Samuels Parker email address, link to send email opens in app" >email@samuelparker.tech</a>
-           </p>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- Align brand to the left -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/SamWebsiteSmallsLandScapes-7.jpg" alt="Sam Avatar" width="40" height="35"
+            class="d-inline-block align-text-top">
+          SAMUEL PARKER
+        </a>
+
+        <!-- Align the hamburger button to the right -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="assets/cv/spcv.pdf" target="_blank">Download CV</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Main Title-->
+    <div class="container text-center" id="title">
+      <h1 id="name">Samuel Parker</h1>
+      <h2>Junior Developer</h2>
+      <span class="code"><img src="assets/web-development.png"></span>
     </div>
+    <!-- Accordion 1 -->
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            About
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>As a Junior Developer, with a particular interest in software development, I produce clean, maintainable
+              code with a solid understanding of the Software Development Life Cycle.
+              I have demonstrated strong problem-solving skills in both solo and collaborative environments, leading on
+              fulfilling the requirements of the projects. I am predominantly proficient in HTML, but I am developing my
+              skills in Python further. I am currently seeking opportunities to apply my technical, collaborative skills
+              in a dynamic team setting and further develop skills in coding.
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <!-- Accordion 2-->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Skills Progress
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- Progress Bars-->
+            <div class="container">
+              <h1 class="skills">Skills Progress</h1>
+
+              <div class="progress-container">
+                <div class="skill">
+                  <div class="skill-label">HTML & CSS</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-value">90%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Web Development</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-value">90%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Web Design</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                    <div class="progress-value">90%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Computer Science</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 30%;"></div>
+                    <div class="progress-value">30%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Python</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 30%;"></div>
+                    <div class="progress-value">30%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">JavaScript</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 20%;"></div>
+                    <div class="progress-value">20%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Data Science</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                    <div class="progress-value">10%</div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="skill-label">Data Engineering</div>
+                  <div class="progress-bar-background">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                    <div class="progress-value">10%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Skills Progress Bar Ends-->
+          </div>
+        </div>
+      </div>
+      <!-- Accordion 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Education, Qualifications and Certificates
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h2>Codecademy</h2>
+            <h3>Completed</h3>
+            <ul>
+              <li>HTML (7 Hours)</li>
+              <li>CSS (6 Hours)</li>
+              <li>Bootstrap (3 Hours)</li>
+            </ul>
+            <h3>In Progress</h3>
+            <ul>
+              <li>Computer Science Career Path, emphasis on Python (80 Hours)</li>
+              <li>JavaScript (15 Hours)</li>
+            </ul>
+            <h2> Education</h2>
+            <ul>
+              <li>
+                <p><strong>Code Institute April 2024 - August 2024:</strong>
+                  Full Stack Developer Boot Camp
+                </p>
+              </li>
+              <li>
+                <p><strong>University of Plymouth Sept 2006 - June 2009:</strong>
+                  History with Politics BA Hons
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion 4-->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Employment History
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h2>Employment History</h2>
+
+            <ul>
+              <li><strong>Career Break: Family & Code Institute Bootcamp (February 2024 - August 2024)</strong>
+                <ul>
+                  <li>Developed problem-solving skills through solo and group coding projects.</li>
+                  <li>Demonstrated collaboration by working with peers on dynamic web applications.</li>
+                  <li>Managed time efficiently using Agile methodologies for project deadlines.</li>
+                  <li>Adapted to both front-end and back-end development tasks, improving versatility.</li>
+                </ul>
+              </li>
+
+              <li><strong>Freelance Photographer (January 2016 - Present)</strong>
+                <ul>
+                  <li>Strong communication and client management skills, independently handling projects from planning
+                    to execution.</li>
+                  <li>Adaptability to high-pressure environments, meeting tight deadlines and resolving issues quickly.
+                  </li>
+                  <li>Effective problem-solving, ensuring client satisfaction and project success.</li>
+                  <li>Attention to detail in post-production and final delivery of projects.</li>
+                </ul>
+              </li>
+
+              <li><strong>Account Manager, Your Stay Bristol Serviced Apartments (March 2012 - January 2024)</strong>
+                <ul>
+                  <li>Excellent problem-solving skills, resolving booking, payment, and debt issues to improve client
+                    satisfaction.</li>
+                  <li>Strong organisational skills, managing client accounts, payments, and platform content delivery.
+                  </li>
+                  <li>Collaboration with colleagues, coordinating across teams to manage backend websites and content.
+                  </li>
+                  <li>Adaptability to manage live feeds and handle requests for XML reports.</li>
+                </ul>
+              </li>
+
+              <li><strong>Career Break: Travel (February 2011 - February 2012)</strong>
+                <ul>
+                  <li>Adaptability, enhanced through navigating new environments and challenges across multiple
+                    countries.</li>
+                  <li>Organisational skills, demonstrated by managing travel logistics and timelines.</li>
+                  <li>Effective communication skills, developed through interacting with diverse cultures.</li>
+                </ul>
+              </li>
+
+              <li><strong>Customer Care Officer, South Gloucestershire Council (July 2010 - January 2011)</strong>
+                <ul>
+                  <li>Excellent communication skills, acting as a key liaison between departments and clients.</li>
+                  <li>Teamwork and collaboration, working closely with council teams to manage tasks.</li>
+                  <li>Problem-solving, resolving client issues efficiently and maintaining satisfaction.</li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- Accordion 5 (New) -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Projects
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h1 class="text-center mb-4">Projects</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <!-- Project 1 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/staysafe.png" class="card-img-top" alt="Staying Safe Online">
+                  <div class="card-body">
+                    <h5 class="card-title">Staying Safe Online</h5>
+                    <p class="card-text">A group project using HTML, CSS & Bootstrap to provide users with essential
+                      tips and tools for maintaining online security.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/SamuelParkerTech/BC-Hackathon1-StaySafeOnline" class="btn btn-primary"
+                      target="_blank">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/quizjs.png" class="card-img-top" alt="InfoQuiz JS Project">
+                  <div class="card-body">
+                    <h5 class="card-title">InfoQuiz JS Project</h5>
+                    <p class="card-text">A group project utilizing HTML, CSS, JavaScript & Bootstrap to create a dynamic
+                      quiz application.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/SamuelParkerTech/BC-Hackathon2-InfoQuiz-JavaScript"
+                      class="btn btn-primary" target="_blank">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/beereview.png" class="card-img-top" alt="CarewFest Beers and Reviews">
+                  <div class="card-body">
+                    <h5 class="card-title">CarewFest Beers and Reviews</h5>
+                    <p class="card-text">An individual project using HTML, CSS, Python, Django, JavaScript & Bootstrap
+                      to manage and review beers at a festival.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/SamuelParkerTech/BeerReviewDjango" class="btn btn-primary"
+                      target="_blank">View Project</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 4 -->
+              <div class="col">
+                <div class="card h-100">
+                  <img src="assets/byte2eat.png" class="card-img-top" alt="Byte to Eat">
+                  <div class="card-body">
+                    <h5 class="card-title">Byte to Eat</h5>
+                    <p class="card-text">A group project with HTML, CSS, Python, Django & Bootstrap focused on providing
+                      food-related recommendations and reviews.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://github.com/CyberArchitect777/hackathon3-byte-to-eat-project"
+                      class="btn btn-primary" target="_blank">View Project</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </main>
+  <footer>
+    <ul id="social-networks">
+      <li>
+        <a href="https://www.linkedin.com/in/samuelparkerdev/" target="_blank" rel="noopener"
+          aria-label="Visit my LinkedIn page (opens in new tab)">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/SamuelParkerTech" target="_blank" rel="noopener"
+          aria-label="Visit my GitHub page (opens in a new tab)">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.codecademy.com/profiles/ObiWanPenobi" target="_blank" rel="noopener"
+          aria-label="Visit my Codecademy Profile page (opens in a new tab)">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Codecademy</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://linktr.ee/samuelparkertech" target="_blank" rel="noopener"
+          aria-label="Visit my Linktree page (opens in a new tab)">
+          <i class="fa-solid fa-code-branch"></i>
+          <span>Linktree</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:email@samuelparker.tech"
+          aria-label="Samuel Parker email address, link to send email opens in app">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </li>
+      <li>
+        <a href="assets/cv/spcv.pdf" aria-label="Samuel Parker CV download link">
+          <i class="fa-solid fa-file"></i>
+          <span>CV</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <!-- Font Awesome Script-->
+  <script src="https://kit.fontawesome.com/c25dc1f8ed.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
