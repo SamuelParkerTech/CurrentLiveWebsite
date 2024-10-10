@@ -23,3 +23,38 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+// Skill data with labels and progress percentages
+const skills = [
+  { label: "HTML & CSS", progress: 90 },
+  { label: "Web Development", progress: 90 },
+  { label: "Web Design", progress: 90 },
+  { label: "Computer Science", progress: 12 },
+  { label: "Python", progress: 54 },
+  { label: "JavaScript", progress: 20 },
+  { label: "Data Science", progress: 10 },
+  { label: "Data Engineering", progress: 10 }
+];
+
+// Function to create skill divs dynamically
+function createProgressBar(skill) {
+  return `
+    <div class="skill">
+      <div class="skill-label">${skill.label}</div>
+      <div class="progress-bar-background">
+        <div class="progress-bar" style="width: ${skill.progress}%;"></div>
+        <div class="progress-value">${skill.progress}%</div>
+      </div>
+    </div>
+  `;
+}
+
+// Sort skills by progress in descending order
+skills.sort((a, b) => b.progress - a.progress);
+
+// Insert sorted skill divs into the container
+const container = document.getElementById("progressContainer");
+skills.forEach(skill => {
+  container.innerHTML += createProgressBar(skill);
+});

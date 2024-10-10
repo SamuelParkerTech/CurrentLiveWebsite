@@ -42,7 +42,7 @@ main {
   font-size: x-large;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
 }
 
 nav a {
@@ -197,7 +197,7 @@ footer {
   width: 100%;
   bottom: 0;
   padding: 0em;
-  z-index: 1;
+  z-index: 1000;
 }
 
 #social-networks {
@@ -241,7 +241,7 @@ li span:hover {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
