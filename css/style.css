@@ -10,7 +10,7 @@
 /* General styles */
 body {
   font-family: 'Kanit', sans-serif;
-  background: url("..assets/whitebackground.jpg") no-repeat center center fixed !important;
+  background: url("/workspace/CurrentLiveWebsite/assets/whitebackground.jpg") no-repeat center center fixed !important;
   background-size: cover;
   margin: 0;
   padding: 0;
