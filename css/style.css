@@ -104,6 +104,11 @@ nav button:hover {
   background-color: #333;
 }
 
+.accordion .accordion-button::after {
+  color: white; /* Change the arrow color to white */
+  filter: brightness(0) invert(1); /* Ensure the arrow is visible against the dark background */
+}
+
 /* Progress Bars */
 
 .skills {
