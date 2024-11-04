@@ -27,14 +27,16 @@ window.onclick = function(event) {
 
 // Skill data with labels and progress percentages
 const skills = [
-  { label: "HTML & CSS", progress: 90 },
+  { label: "HTML & CSS", progress: 100 },
   { label: "Web Development", progress: 90 },
   { label: "Web Design", progress: 90 },
-  { label: "Computer Science", progress: 12 },
-  { label: "Python", progress: 54 },
+  { label: "Computer Science", progress: 14 },
+  { label: "Python", progress: 71 },
   { label: "JavaScript", progress: 20 },
   { label: "Data Science", progress: 10 },
-  { label: "Data Engineering", progress: 10 }
+  { label: "Data Engineering", progress: 10 },
+  { label: "Cyber Security", progress: 7 },
+  { label: "C++", progress: 0 }
 ];
 
 // Function to create skill divs dynamically
