@@ -34,7 +34,21 @@ main {
   flex: 1;
 }
 
+/* 404 Page Styles */
 
+.pagenotfound {
+  overflow: hidden; /* Ensures no extra scrollbars are displayed */
+}
+
+.pagenotfound main {
+  text-align: center;
+  padding-top: 20vh;
+  min-height: 80vh;
+}
+
+h2 a:hover {
+  color: blue !important;
+}
 
 /* Nav Bar Styles */
 
