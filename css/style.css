@@ -288,6 +288,12 @@ nav button:hover {
   color: orange
 }
 
+.mobile, .email, .contacttext {
+  font-size: 18px; /* Adjust font size as needed */
+  line-height: 1.5; /* Optional: Adjust line spacing */
+  text-decoration: none; /* Remove underline from links */
+}
+
 /* Footer Styles */
 
 footer {
