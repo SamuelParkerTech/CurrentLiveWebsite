@@ -202,7 +202,7 @@ nav button:hover {
 .small-box {
   background-color: black;
   padding: 20px;          /* Adjust padding to control spacing around the text */
-  max-width: 500px;       /* Set max-width to control the width of the box */
+  max-width: 550px;       /* Set max-width to control the width of the box */
   margin: 0 auto;         /* Center the box within the container */
   border-radius: 10px;    /* Optional: add rounded corners */
 }
@@ -227,14 +227,15 @@ color: blue;
 }
 
 .contacttext {
-  display: inline;
   color:white;
 }
 
 .mobile {
+display: inline;
 color: green;
 }
 .email {
+display: inline;
 color: orange
 }
 
