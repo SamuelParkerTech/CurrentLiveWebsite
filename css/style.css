@@ -37,7 +37,8 @@ main {
 /* 404 Page Styles */
 
 .pagenotfound {
-  overflow: hidden; /* Ensures no extra scrollbars are displayed */
+  overflow: hidden;
+  /* Ensures no extra scrollbars are displayed */
 }
 
 .pagenotfound main {
@@ -113,8 +114,10 @@ nav button:hover {
 }
 
 .accordion .accordion-button::after {
-  color: white; /* Change the arrow color to white */
-  filter: brightness(0) invert(1); /* Ensure the arrow is visible against the dark background */
+  color: white;
+  /* Change the arrow color to white */
+  filter: brightness(0) invert(1);
+  /* Ensure the arrow is visible against the dark background */
 }
 
 /* Progress Bars - Currently being controlled by Javascript */
@@ -201,42 +204,88 @@ nav button:hover {
 /* Contact Page Styles */
 .small-box {
   background-color: black;
-  padding: 20px;          /* Adjust padding to control spacing around the text */
-  max-width: 550px;       /* Set max-width to control the width of the box */
-  margin: 0 auto;         /* Center the box within the container */
-  border-radius: 10px;    /* Optional: add rounded corners */
+  padding: 20px;
+  /* Adjust padding to control spacing around the text */
+  max-width: 550px;
+  /* Set max-width to control the width of the box */
+  margin: 0 auto;
+  /* Center the box within the container */
+  border-radius: 10px;
+  /* Optional: add rounded corners */
 }
 
 .contactname {
-color:white;
+  color: white;
 }
-.contacttitle1, .contacttitle2 {
-  display: inline; /* This keeps them on the same line */
-  margin: 0;       /* Removes default margin */
-}
-.contacttitle1 {
-color: green;
-}
+
+.contacttitle1,
 .contacttitle2 {
-color: blue;
+  display: inline;
+  /* This keeps them on the same line */
+  margin: 0;
+  /* Removes default margin */
+}
+
+.contacttitle1 {
+  color: green;
+}
+
+.contacttitle2 {
+  color: blue;
 }
 
 .code2 {
-  display: block;        /* Make the image occupy its own line */
-  margin: 20px auto;     /* Space above and below the image, centered */
+  display: block;
+  /* Make the image occupy its own line */
+  margin: 20px auto;
+  /* Space above and below the image, centered */
 }
 
+.dotted-line {
+  border: none;
+  border-top: 1px solid white;
+  /* Main line color */
+  position: relative;
+  margin: 20px 0;
+  /* Space above and below the line */
+}
+
+.dotted-line::before,
+.dotted-line::after {
+  content: "•";
+  /* Unicode dot character */
+  position: absolute;
+  font-size: 20px;
+  /* Size of the dots */
+  top: -8px;
+  /* Adjust position vertically */
+  color: white;
+  /* Dot color */
+}
+
+.dotted-line::before {
+  left: 0;
+  /* Dot on the left */
+}
+
+.dotted-line::after {
+  right: 0;
+  /* Dot on the right */
+}
+
+
 .contacttext {
-  color:white;
+  color: white;
 }
 
 .mobile {
-display: inline;
-color: green;
+  display: inline;
+  color: green;
 }
+
 .email {
-display: inline;
-color: orange
+  display: inline;
+  color: orange
 }
 
 /* Footer Styles */
@@ -297,7 +346,8 @@ li span:hover {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; /* Ensures it stays behind content */
+  z-index: -1;
+  /* Ensures it stays behind content */
 }
 
 /* Media Queries */
