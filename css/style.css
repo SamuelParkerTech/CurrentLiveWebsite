@@ -37,7 +37,8 @@ main {
 /* 404 Page Styles */
 
 .pagenotfound {
-  overflow: hidden; /* Ensures no extra scrollbars are displayed */
+  overflow: hidden;
+  /* Ensures no extra scrollbars are displayed */
 }
 
 .pagenotfound main {
@@ -85,12 +86,6 @@ nav button:hover {
   padding-bottom: 50px;
 }
 
-/*
-.background {
-  background-color: rgba(128, 128, 128, 0.5) !important;
-}
-  */
-
 #title h1 {
   font-size: 400%;
 }
@@ -119,11 +114,13 @@ nav button:hover {
 }
 
 .accordion .accordion-button::after {
-  color: white; /* Change the arrow color to white */
-  filter: brightness(0) invert(1); /* Ensure the arrow is visible against the dark background */
+  color: white;
+  /* Change the arrow color to white */
+  filter: brightness(0) invert(1);
+  /* Ensure the arrow is visible against the dark background */
 }
 
-/* Progress Bars */
+/* Progress Bars - Currently being controlled by Javascript */
 
 .skills {
   text-align: center;
@@ -204,6 +201,98 @@ nav button:hover {
   /* Black border on hover */
 }
 
+/* Contact Page Styles */
+.small-box {
+  background-color: black;
+  padding: 20px;
+  /* Adjust padding to control spacing around the text */
+  max-width: 550px;
+  /* Set max-width to control the width of the box */
+  margin: 0 auto;
+  /* Center the box within the container */
+  border-radius: 10px;
+  /* Optional: add rounded corners */
+}
+
+.contactname {
+  color: white;
+}
+
+.contacttitle1,
+.contacttitle2 {
+  display: inline;
+  /* This keeps them on the same line */
+  margin: 0;
+  /* Removes default margin */
+}
+
+.contacttitle1 {
+  color: green;
+}
+
+.contacttitle2 {
+  color: blue;
+}
+
+.code2 {
+  display: block;
+  /* Make the image occupy its own line */
+  margin: 20px auto;
+  /* Space above and below the image, centered */
+}
+
+.dotted-line {
+  border: none;
+  border-top: 1px solid white;
+  /* Main line color */
+  position: relative;
+  margin: 20px 0;
+  /* Space above and below the line */
+}
+
+.dotted-line::before,
+.dotted-line::after {
+  content: "•";
+  /* Unicode dot character */
+  position: absolute;
+  font-size: 20px;
+  /* Size of the dots */
+  top: -8px;
+  /* Adjust position vertically */
+  color: white;
+  /* Dot color */
+}
+
+.dotted-line::before {
+  left: 0;
+  /* Dot on the left */
+}
+
+.dotted-line::after {
+  right: 0;
+  /* Dot on the right */
+}
+
+
+.contacttext {
+  color: white;
+}
+
+.mobile {
+  display: inline;
+  color: green;
+}
+
+.email {
+  display: inline;
+  color: orange
+}
+
+.mobile, .email, .contacttext {
+  font-size: 18px; /* Adjust font size as needed */
+  line-height: 1.5; /* Optional: Adjust line spacing */
+  text-decoration: none; /* Remove underline from links */
+}
 
 /* Footer Styles */
 
@@ -252,43 +341,6 @@ li span:hover {
   color: blue !important;
 }
 
-/* Modal Styles */
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #000;
-  color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #fff;
-}
-
-/* Close Button */
-.close {
-  color: #aaa;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 /* Hover Effects */
 .links a:hover {
   text-decoration: underline;
@@ -300,7 +352,8 @@ li span:hover {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; /* Ensures it stays behind content */
+  z-index: -1;
+  /* Ensures it stays behind content */
 }
 
 /* Media Queries */
